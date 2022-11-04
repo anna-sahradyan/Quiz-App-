@@ -1,39 +1,17 @@
 import React from 'react';
+import Pyramid from "./components/Pyramid/Pyramid";
+import Main from "./components/Main/Main";
 
 
 const App = () => {
     return (
         <>
             <div className={"wrapper"}>
-                <div className={"main"}>main
-
+                <div className={"main"}>
+                    <Main/>
                 </div>
                 <div className={"pyramid"}>
-                    <ul className={"moneyList"}>
-                        <li className={"moneyListItem"}>
-                            <span className={"moneyListItemNumber"}>4</span>
-                            <span className={"moneyListItemAmount"}>$ 400</span>
-                            </li>
-                        <li className={"moneyListItem"}>
-                            <span className={"moneyListItemNumber"}>4</span>
-                            <span className={"moneyListItemAmount"}>$ 400</span>
-                        </li> <li className={"moneyListItem"}>
-                        <span className={"moneyListItemNumber"}>4</span>
-                        <span className={"moneyListItemAmount"}>$ 400</span>
-                    </li> <li className={"moneyListItem"}>
-                        <span className={"moneyListItemNumber"}>4</span>
-                        <span className={"moneyListItemAmount"}>$ 400</span>
-                    </li> <li className={"moneyListItem"}>
-                        <span className={"moneyListItemNumber"}>4</span>
-                        <span className={"moneyListItemAmount"}>$ 400</span>
-                    </li> <li className={"moneyListItem"}>
-                        <span className={"moneyListItemNumber"}>4</span>
-                        <span className={"moneyListItemAmount"}>$ 400</span>
-                    </li> <li className={"moneyListItem"}>
-                        <span className={"moneyListItemNumber"}>4</span>
-                        <span className={"moneyListItemAmount"}>$ 400</span>
-                    </li>
-                    </ul>
+                    <Pyramid/>
                 </div>
 
             </div>
