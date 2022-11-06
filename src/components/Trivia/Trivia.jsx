@@ -2,8 +2,8 @@ import React, {useEffect, useState} from 'react';
 import "./triviaStyle.css";
 import text from "../../data/text";
 
-const Trivia = ({questionNumber, setQuestionNumber}) => {
-    const [timeStop, setTimeStop] = useState(false);
+const Trivia = ({questionNumber, setQuestionNumber,setTimeStop}) => {
+
     const [question, setQuestion] = useState(null);
     const [selectedAnswer, setSelectedAnswer] = useState(null);
     const [classname, setClassName] = useState("answer");

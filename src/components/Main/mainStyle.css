@@ -1,8 +1,9 @@
-.top{
+.top {
     height: 50%;
     position: relative;
 }
-.timer{
+
+.timer {
     width: 70px;
     height: 70px;
     border-radius: 50%;
@@ -16,9 +17,17 @@
     bottom: 10px;
     left: 80px;
 }
-.bottom{
+
+.bottom {
     height: 50%;
 }
-.trivia{
+
+.endText {
+    position: relative;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
 
 }
