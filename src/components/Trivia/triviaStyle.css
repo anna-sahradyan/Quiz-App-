@@ -25,6 +25,34 @@
     flex-wrap: wrap;
 }
 
+.answer.correct {
+    animation: correct 3s ease forwards;
+}
+@keyframes correct {
+    0%,22%,42%{
+        background: mediumblue;
+    }
+    20%,40%,60% {
+        background: linear-gradient(#0e0124, #22074d);
+    }
+    62%,100%{
+        background: green;
+    }
+}
+.answer.wrong {
+    animation: wrong 3s ease forwards;
+}
+@keyframes wrong{
+    0%,22%,42%{
+        background: mediumblue;
+    }
+    20%,40%,60% {
+        background: linear-gradient(#0e0124, #22074d);
+    }
+    62%,100%{
+        background: crimson;
+    }
+}
 .answer {
     width: 40%;
     background: linear-gradient(#0e0124, #22074d);
@@ -33,9 +61,11 @@
     border: 1px solid white;
     font-size: 20px;
     margin: 0 10px 20px 10px;
+    cursor: pointer;
 
 
 }
-.answer:hover,.answer.active{
-background: mediumblue;
+
+.answer:hover, .answer.active {
+    background: mediumblue;
 }

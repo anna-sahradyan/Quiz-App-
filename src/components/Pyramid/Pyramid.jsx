@@ -1,9 +1,9 @@
-import React, {useState} from 'react';
+import React  from 'react';
 import money from "../../data/money.js"
 import "./pyramidStyle.css";
 
-const Pyramid = () => {
-    const [questionNumber, setQuestionNumber] = useState(5);
+const Pyramid = ({setQuestionNumber,questionNumber}) => {
+
 
     return (
         <>
