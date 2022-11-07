@@ -18,8 +18,22 @@
 .startInput {
     width: 100%;
     height: 30px;
+    border: none;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 18px;
+}
+
+.startInput:focus {
+    outline: none;
 }
 
 .startButton {
-
+    width: 100%;
+    height: 30px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: bold;
 }

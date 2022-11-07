@@ -1,13 +1,18 @@
-import React from 'react';
+import React, {useRef} from 'react';
 import "./startStyle.css";
 
-const Start = () => {
-
+const Start = ({setUserName}) => {
+    const inputRef = useRef();
+    const handleClick = () => {
+        inputRef.current.value &&  setUserName(inputRef.current.value)
+    }
     return (
         <>
-            <div className={"start"} placeholder={"enter your name"}>
-                <input type="text" className={"startInput"}/>
-                <button className={"startButton"}>Start</button>
+            <div className={"start"}>
+                <input type="text" className={"startInput"} placeholder={"enter your name"}
+                       ref={inputRef}
+                />
+                <button className={"startButton"} onClick={handleClick}>Start</button>
             </div>
 
         </>
