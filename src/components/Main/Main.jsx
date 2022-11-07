@@ -4,9 +4,10 @@ import Trivia from "../Trivia/Trivia";
 import money from "../../data/money";
 import Timer from "../Timer/Timer";
 
-const Main = React.memo(function Main({setQuestionNumber, questionNumber}){
+const Main = React.memo(function Main({setQuestionNumber, questionNumber}) {
     const [earned, setEarned] = useState("$ 0");
     const [timeStop, setTimeStop] = useState(false);
+
     useEffect(() => {
         questionNumber > 1 && setEarned(money.find((item) => item.id === questionNumber - 1).amount)
 
@@ -18,7 +19,8 @@ const Main = React.memo(function Main({setQuestionNumber, questionNumber}){
 
                 <>
                     <div className={"top"}>
-                        <div className={"timer"}><Timer setTimeStop={setTimeStop} questionNumber={questionNumber}/></div>
+                        <div className={"timer"}><Timer setTimeStop={setTimeStop} questionNumber={questionNumber}/>
+                        </div>
                     </div>
                     <div className={"bottom"}><Trivia setQuestionNumber={setQuestionNumber} q
                                                       questionNumber={questionNumber}
